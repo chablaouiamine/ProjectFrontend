@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './Register.css';
+import "./Register.css";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -19,9 +19,11 @@ const Register = () => {
 
   return (
     <form onSubmit={handleSubmit} className="container d-flex flex-column">
-        <h3>Form Submission</h3>
+      <h3>Form Submission</h3>
       <div className="form-group">
-        <label>E-mail address<span className="required-field">*</span></label>
+        <label>
+          E-mail address<span className="required-field">*</span>
+        </label>
         <input
           type="email"
           className="form-control"
@@ -31,7 +33,9 @@ const Register = () => {
       </div>
 
       <div className="form-group">
-        <label>First Name<span className="required-field">*</span></label>
+        <label>
+          First Name<span className="required-field">*</span>
+        </label>
         <input
           type="text"
           className="form-control"
@@ -41,7 +45,9 @@ const Register = () => {
       </div>
 
       <div className="form-group">
-        <label>Last Name<span className="required-field">*</span></label>
+        <label>
+          Last Name<span className="required-field">*</span>
+        </label>
         <input
           type="text"
           className="form-control"
@@ -61,7 +67,9 @@ const Register = () => {
       </div>
 
       <div className="form-group">
-        <label>Faculty/University<span className="required-field">*</span></label>
+        <label>
+          Faculty/University<span className="required-field">*</span>
+        </label>
         <input
           type="text"
           className="form-control"
@@ -70,15 +78,40 @@ const Register = () => {
         />
       </div>
 
-      <div className="form-group">
+      <div className="form-check">
+        <input
+          className="form-check-input"
+          type="radio"
+          name="flexRadioDefault"
+          id="flexRadioDefault1"
+        />
+        <label className="form-check-label" htmlFor="flexRadioDefault1">
+          PhD student
+        </label>
+      </div>
+      <div className="form-check">
+        <input
+          className="form-check-input"
+          type="radio"
+          name="flexRadioDefault"
+          id="flexRadioDefault2"
+        />
+        <label className="form-check-label" htmlFor="flexRadioDefault2">
+          PhD
+        </label>
+      </div>
+
+      {/* <div className="form-group">
         <label>Status<span className="required-field">*</span></label>
+        
         <input
           type="text"
           className="form-control"
           value={status}
           onChange={(e) => setStatus(e.target.value)}
         />
-      </div>
+        
+      </div> */}
 
       <div className="form-group">
         <label>Thesis Year</label>
@@ -91,7 +124,9 @@ const Register = () => {
       </div>
 
       <div className="form-group">
-        <label>Title<span className="required-field">*</span></label>
+        <label>
+          Title<span className="required-field">*</span>
+        </label>
         <input
           type="text"
           className="form-control"
