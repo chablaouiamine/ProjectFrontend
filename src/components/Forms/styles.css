@@ -1,0 +1,28 @@
+body {
+    background-color: #f0f2f5;;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.required-field {
+    color: red;
+}

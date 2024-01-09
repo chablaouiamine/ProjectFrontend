@@ -1,23 +1,27 @@
-import React from "react";
 import { useState } from "react";
 
-export default function Test() {
-  const [email, setEmail] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [researchStructure, setResearchStructure] = useState("");
-  const [faculty, setFaculty] = useState("");
-  const [status, setStatus] = useState("");
-  const [thesisYear, setThesisYear] = useState("");
-  const [title, setTitle] = useState("");
-  const [paperFile, setPaperFile] = useState(null);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-  };
-  return (
-    <div>
+export default function SpeakerForm({
+    handleSubmit,
+    email,
+    setEmail,
+    firstName,
+    setFirstName,
+    lastName,
+    setLastName,
+    researchStructure,
+    setResearchStructure,
+    faculty,
+    setFaculty,
+    status,
+    setStatus,
+    thesisYear,
+    setThesisYear,
+    title,
+    setTitle,
+  }) {
+    const [pdfFile, setPdfFile] = useState(null);
+  
+    return (
       <form onSubmit={handleSubmit} className="container">
         <h3>Form Submission</h3>
         <div className="row">
@@ -145,6 +149,6 @@ export default function Test() {
           </div>
         </div>
       </form>
-    </div>
-  );
-}
+    );
+  };
+  

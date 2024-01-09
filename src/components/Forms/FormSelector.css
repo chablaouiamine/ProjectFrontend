@@ -1,0 +1,22 @@
+/* Style for the selected role */
+.selected {
+    background-color: #007bff; /* Change to your preferred color */
+    color: white;
+  }
+  
+  /* Additional styling for buttons */
+  button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  button.selected {
+    /* Additional styling when selected */
+    /* You can customize this further */
+    /* For example, change background-color, font color, etc. */
+  }
+  
