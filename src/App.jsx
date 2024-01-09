@@ -18,8 +18,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<FormSelector />}>
-          <Route path="speaker" element={<SpeakerForm />} />
-          <Route path="assistant" element={<AssistantForm />} />
+          {/* <Route path="speaker" element={<SpeakerForm />} />
+          <Route path="assistant" element={<AssistantForm />} /> */}
         </Route>
       </Routes>
     </>

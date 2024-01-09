@@ -26,3 +26,12 @@ label {
 .required-field {
     color: red;
 }
+
+button.selected {
+    background-color: #3875b7;
+    color: #fff;
+}
+
+.submit-btn {
+    background-color: #3875b7;
+}
